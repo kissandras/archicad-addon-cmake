@@ -25,7 +25,7 @@ jobs:
       uses: turtlebrowser/get-conan@v1.0
       
     - name: Create Conan default profile
-      run: conan profile new default --detect
+      run: conan profile detect
       
     - name: Set compiler for WIN
       if: matrix.os-type == 'windows-latest'
